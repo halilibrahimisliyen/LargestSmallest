@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-class Main {
+public class LargestSmallest {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -12,10 +12,12 @@ class Main {
        {
            System.out.print("Sayi değerini giriniz");
            sayi=input.nextInt();
-           if (sayi>max)
-               max=sayi;
-           else if (sayi<min)
-               min=sayi;
+           if (sayi>max){
+            max=sayi;
+           }
+           else if (sayi>min && sayi<max){
+            min=sayi;
+           }
            counter--;
 
 
